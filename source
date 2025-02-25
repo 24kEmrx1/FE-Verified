@@ -249,7 +249,6 @@ G2L["1a"]["MaxTextSize"] = 15;
 
 -- StarterGui.ScreenGui.cvg.CanvasGroup.Frame.ScrollingFrame.Frame.Frame.Frame.TextBox
 G2L["1b"] = Instance.new("TextBox", G2L["10"]);
-G2L["1b"]["CursorPosition"] = -1;
 G2L["1b"]["TextXAlignment"] = Enum.TextXAlignment.Left;
 G2L["1b"]["PlaceholderColor3"] = Color3.fromRGB(255, 255, 255);
 G2L["1b"]["BorderSizePixel"] = 0;
@@ -302,80 +301,116 @@ G2L["20"]["TextScaled"] = true;
 G2L["20"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
 G2L["20"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
 G2L["20"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["20"]["Size"] = UDim2.new(0.58098, 0, 0.12083, 0);
+G2L["20"]["Size"] = UDim2.new(0.38427, 0, 0.12083, 0);
 G2L["20"]["BackgroundTransparency"] = 0.6;
 G2L["20"]["Name"] = [[info]];
 G2L["20"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 G2L["20"]["Text"] = [[Please set your experience language to Vietnamese]];
-G2L["20"]["Position"] = UDim2.new(0.70951, 0, 0.88699, 0);
+G2L["20"]["Position"] = UDim2.new(0.80786, 0, 0.88699, 0);
+
+
+-- StarterGui.ScreenGui.cvg.CanvasGroup.Frame.ScrollingFrame.Frame.Frame.Frame.cpy
+G2L["21"] = Instance.new("TextButton", G2L["10"]);
+G2L["21"]["TextWrapped"] = true;
+G2L["21"]["BorderSizePixel"] = 0;
+G2L["21"]["TextColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["21"]["AutoButtonColor"] = false;
+G2L["21"]["TextSize"] = 10;
+G2L["21"]["TextScaled"] = true;
+G2L["21"]["BackgroundColor3"] = Color3.fromRGB(11, 11, 11);
+G2L["21"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Bold, Enum.FontStyle.Normal);
+G2L["21"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["21"]["Size"] = UDim2.new(0.16842, 0, 0.12083, 0);
+G2L["21"]["BackgroundTransparency"] = 0.6;
+G2L["21"]["Name"] = [[cpy]];
+G2L["21"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["21"]["Text"] = [[Copy]];
+G2L["21"]["Position"] = UDim2.new(0.51081, 0, 0.88699, 0);
+
+
+-- StarterGui.ScreenGui.cvg.CanvasGroup.Frame.ScrollingFrame.Frame.Frame.Frame.cpy.UICorner
+G2L["22"] = Instance.new("UICorner", G2L["21"]);
+G2L["22"]["CornerRadius"] = UDim.new(0, 6);
+
+
+-- StarterGui.ScreenGui.cvg.CanvasGroup.Frame.ScrollingFrame.Frame.Frame.Frame.cpy.UIStroke
+G2L["23"] = Instance.new("UIStroke", G2L["21"]);
+G2L["23"]["Transparency"] = 0.6;
+G2L["23"]["ApplyStrokeMode"] = Enum.ApplyStrokeMode.Border;
+G2L["23"]["Color"] = Color3.fromRGB(36, 36, 36);
+
+
+-- StarterGui.ScreenGui.cvg.CanvasGroup.Frame.ScrollingFrame.Frame.Frame.Frame.cpy.UITextSizeConstraint
+G2L["24"] = Instance.new("UITextSizeConstraint", G2L["21"]);
+G2L["24"]["MaxTextSize"] = 15;
 
 
 -- StarterGui.ScreenGui.cvg.CanvasGroup.Frame.ScrollingFrame.UIGridLayout
-G2L["21"] = Instance.new("UIGridLayout", G2L["d"]);
-G2L["21"]["CellSize"] = UDim2.new(1, 0, 1, 0);
-G2L["21"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
+G2L["25"] = Instance.new("UIGridLayout", G2L["d"]);
+G2L["25"]["CellSize"] = UDim2.new(1, 0, 1, 0);
+G2L["25"]["SortOrder"] = Enum.SortOrder.LayoutOrder;
 
 
 -- StarterGui.ScreenGui.cvg.CanvasGroup.Frame.LocalScript
-G2L["22"] = Instance.new("LocalScript", G2L["4"]);
+G2L["26"] = Instance.new("LocalScript", G2L["4"]);
 
 
 
 -- StarterGui.ScreenGui.CanvasGroup
-G2L["23"] = Instance.new("CanvasGroup", G2L["1"]);
-G2L["23"]["GroupTransparency"] = 1;
-G2L["23"]["BorderSizePixel"] = 0;
-G2L["23"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["23"]["Size"] = UDim2.new(1, 0, 1, 0);
-G2L["23"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["23"]["BackgroundTransparency"] = 1;
+G2L["27"] = Instance.new("CanvasGroup", G2L["1"]);
+G2L["27"]["GroupTransparency"] = 1;
+G2L["27"]["BorderSizePixel"] = 0;
+G2L["27"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["27"]["Size"] = UDim2.new(1, 0, 1, 0);
+G2L["27"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["27"]["BackgroundTransparency"] = 1;
 
 
 -- StarterGui.ScreenGui.CanvasGroup.Frame
-G2L["24"] = Instance.new("Frame", G2L["23"]);
-G2L["24"]["BorderSizePixel"] = 0;
-G2L["24"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
-G2L["24"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["24"]["Size"] = UDim2.new(0.35, 0, 0.12, 0);
-G2L["24"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
-G2L["24"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["28"] = Instance.new("Frame", G2L["27"]);
+G2L["28"]["BorderSizePixel"] = 0;
+G2L["28"]["BackgroundColor3"] = Color3.fromRGB(5, 5, 5);
+G2L["28"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["28"]["Size"] = UDim2.new(0.35, 0, 0.12, 0);
+G2L["28"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
 
 
 -- StarterGui.ScreenGui.CanvasGroup.Frame.UICorner
-G2L["25"] = Instance.new("UICorner", G2L["24"]);
-G2L["25"]["CornerRadius"] = UDim.new(0, 12);
+G2L["29"] = Instance.new("UICorner", G2L["28"]);
+G2L["29"]["CornerRadius"] = UDim.new(0, 12);
 
 
 -- StarterGui.ScreenGui.CanvasGroup.Frame.UIAspectRatioConstraint
-G2L["26"] = Instance.new("UIAspectRatioConstraint", G2L["24"]);
+G2L["2a"] = Instance.new("UIAspectRatioConstraint", G2L["28"]);
 
 
 
 -- StarterGui.ScreenGui.CanvasGroup.Frame.LocalScript
-G2L["27"] = Instance.new("LocalScript", G2L["24"]);
+G2L["2b"] = Instance.new("LocalScript", G2L["28"]);
 
 
 
 -- StarterGui.ScreenGui.CanvasGroup.Frame.TextLabel
-G2L["28"] = Instance.new("TextLabel", G2L["24"]);
-G2L["28"]["TextWrapped"] = true;
-G2L["28"]["BorderSizePixel"] = 0;
-G2L["28"]["TextSize"] = 14;
-G2L["28"]["TextScaled"] = true;
-G2L["28"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
-G2L["28"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Normal);
-G2L["28"]["TextColor3"] = Color3.fromRGB(255, 0, 128);
-G2L["28"]["BackgroundTransparency"] = 1;
-G2L["28"]["RichText"] = true;
-G2L["28"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
-G2L["28"]["Size"] = UDim2.new(0.9695, 0, 0.7, 0);
-G2L["28"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
-G2L["28"]["Text"] = [[<font color="rgb(255,255,255)">ES</font>SI]];
-G2L["28"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
+G2L["2c"] = Instance.new("TextLabel", G2L["28"]);
+G2L["2c"]["TextWrapped"] = true;
+G2L["2c"]["BorderSizePixel"] = 0;
+G2L["2c"]["TextSize"] = 14;
+G2L["2c"]["TextScaled"] = true;
+G2L["2c"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["2c"]["FontFace"] = Font.new([[rbxasset://fonts/families/GothamSSm.json]], Enum.FontWeight.Heavy, Enum.FontStyle.Normal);
+G2L["2c"]["TextColor3"] = Color3.fromRGB(255, 0, 128);
+G2L["2c"]["BackgroundTransparency"] = 1;
+G2L["2c"]["RichText"] = true;
+G2L["2c"]["AnchorPoint"] = Vector2.new(0.5, 0.5);
+G2L["2c"]["Size"] = UDim2.new(0.9695, 0, 0.7, 0);
+G2L["2c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2c"]["Text"] = [[<font color="rgb(255,255,255)">ES</font>SI]];
+G2L["2c"]["Position"] = UDim2.new(0.5, 0, 0.5, 0);
 
 
 -- StarterGui.ScreenGui.CanvasGroup.Frame.TextLabel.UIAspectRatioConstraint
-G2L["29"] = Instance.new("UIAspectRatioConstraint", G2L["28"]);
+G2L["2d"] = Instance.new("UIAspectRatioConstraint", G2L["2c"]);
 
 
 
@@ -388,16 +423,20 @@ local script = G2L["1f"];
 	
 	script.Parent.rj.MouseButton1Click:Connect(function()
 		if game:GetService("TextChatService").ChatVersion == Enum.ChatVersion.LegacyChatService then
-			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(utf8.char(0xE000) .. ": " .. script.Parent.TextBox.Text,"All")
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("  : " .. script.Parent.TextBox.Text,"All")
 		elseif game:GetService("TextChatService").ChatVersion == Enum.ChatVersion.TextChatService then
-			game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync(utf8.char(0xE000) .. ": " .. script.Parent.TextBox.Text)
+			game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("  : " .. script.Parent.TextBox.Text)
 		end
+	end)
+	
+	script.Parent.cpy.MouseButton1Click:Connect(function()
+		setclipboard("  : " .. script.Parent.TextBox.Text)
 	end)
 end;
 task.spawn(C_1f);
 -- StarterGui.ScreenGui.cvg.CanvasGroup.Frame.LocalScript
-local function C_22()
-local script = G2L["22"];
+local function C_26()
+local script = G2L["26"];
 	local function Clloll()
 		local UIS = game:GetService("UserInputService")
 		local Frame = script.Parent
@@ -429,10 +468,10 @@ local script = G2L["22"];
 				updateInput(input)end;end)end
 	task.spawn(Clloll);
 end;
-task.spawn(C_22);
+task.spawn(C_26);
 -- StarterGui.ScreenGui.CanvasGroup.Frame.LocalScript
-local function C_27()
-local script = G2L["27"];
+local function C_2b()
+local script = G2L["2b"];
 	local loadingScript = function()
 		game:GetService("TweenService"):Create(script["Parent"]["Parent"],TweenInfo.new(1),{GroupTransparency=0}):Play()
 		
@@ -454,6 +493,7 @@ local script = G2L["27"];
 					game:GetService("TweenService"):Create(script["Parent"]["Parent"]["Parent"]["cvg"],TweenInfo.new(1),{GroupTransparency=0}):Play()
 					wait(2)
 					script.Parent.Parent:Destroy()
+					return
 				end
 				local tween = game:GetService("TweenService"):Create(script["Parent"],TweenInfo["new"](0.6,Enum["EasingStyle"]["Quint"],Enum["EasingDirection"]["InOut"]),{Rotation=script["Parent"]["Rotation"]+360})
 				tween:Play()
@@ -465,6 +505,4 @@ local script = G2L["27"];
 	end;
 	task["spawn"](loadingScript);
 end;
-task.spawn(C_27);
-
-return G2L["1"], require;
+task.spawn(C_2b);
