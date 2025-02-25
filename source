@@ -423,14 +423,14 @@ local script = G2L["1f"];
 	
 	script.Parent.rj.MouseButton1Click:Connect(function()
 		if game:GetService("TextChatService").ChatVersion == Enum.ChatVersion.LegacyChatService then
-			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("  : " .. script.Parent.TextBox.Text,"All")
+			game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("  " .. script.Parent.TextBox.Text,"All")
 		elseif game:GetService("TextChatService").ChatVersion == Enum.ChatVersion.TextChatService then
-			game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("  : " .. script.Parent.TextBox.Text)
+			game:GetService("TextChatService").TextChannels.RBXGeneral:SendAsync("  " .. script.Parent.TextBox.Text)
 		end
 	end)
 	
 	script.Parent.cpy.MouseButton1Click:Connect(function()
-		setclipboard("  : " .. script.Parent.TextBox.Text)
+		setclipboard("  " .. script.Parent.TextBox.Text)
 	end)
 end;
 task.spawn(C_1f);
@@ -493,7 +493,6 @@ local script = G2L["2b"];
 					game:GetService("TweenService"):Create(script["Parent"]["Parent"]["Parent"]["cvg"],TweenInfo.new(1),{GroupTransparency=0}):Play()
 					wait(2)
 					script.Parent.Parent:Destroy()
-					return
 				end
 				local tween = game:GetService("TweenService"):Create(script["Parent"],TweenInfo["new"](0.6,Enum["EasingStyle"]["Quint"],Enum["EasingDirection"]["InOut"]),{Rotation=script["Parent"]["Rotation"]+360})
 				tween:Play()
